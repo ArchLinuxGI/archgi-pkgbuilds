@@ -1,20 +1,19 @@
 
-pkgname=arch-calamares-netinstall
-_pkgname=arch-calamares-netinstall
+pkgname=archgi-calamares-config
+_pkgname=archgi-calamares-config
 _destname="/etc/calamares"
-#_licensedir="/usr/share/arcolinux/licenses/"
 pkgver=0.1
 pkgrel=1
 pkgdesc="calamares for arcolinux"
 arch=('any')
-url="https://github.com/ThavaNix/arch-calamares-netinstall.git"
+url="https://github.com/archlinuxgi/archgi-calamares-config.git"
 #license=('')
 makedepends=('git')
 conflicts=('arcolinux-calamares-git-git' 'arcolinux-calamares-dev-git' 'calamares-netinstall' )
 depends=()
 provides=("${pkgname}")
 options=(!strip !emptydirs)
-source=(${_pkgname}::"git+https://github.com/ThavaNix/arch-calamares-netinstall.git")
+source=(${_pkgname}::"git+https://github.com/archlinuxgi/archgi-calamares-config.git")
 sha256sums=('SKIP')
 install='readme.install'
 package() {
